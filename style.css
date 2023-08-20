@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right bottom, #f1c40f, #d35400);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.container {
+    background-color: #fff;
+    padding: 15px;
+    padding-bottom: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 95%;
+    text-align: center;
+
+}
+
+
+.feedBack h3 {
+    margin: 0;
+    font-size: 32px;
+    text-align: center;
+    opacity: .9;
+    color: transparent;
+    background: linear-gradient(to right bottom, #f1c40f, #d35400);
+    -webkit-background-clip: text;
+}
+
+.rating-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin: 50px 0;
+    padding: 0 20px;
+}
+
+.rating-wrap .rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #2c3e50;
+    cursor: pointer;
+    font-size: 20px;
+    transition: .4s ease-in-out;
+}
+
+.rating-wrap .rating p{
+    pointer-events: none;
+    font-weight: 500;
+}
+
+.rating-wrap .rating:is(.active, :hover) {
+    color: #c0392b;
+    background-color: #f1c40f;
+
+}
+
+button.btn {
+    display: block;
+    margin: auto;
+    text-align: center;
+    padding: 10px 24px;
+    border-radius: 5px;
+    width: 150px;
+    color: #fff;
+    background-color: #d35400;
+    border: 1px solid #d35400;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 17px;
+    transition: .4s ease-in-out;
+}
+
+button.btn:hover {
+    color: #d35400;
+    background-color: transparent;
+
+}
+
+.container > h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+
+.container>p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+@media screen and (max-width: 575px) {
+    .container {
+        padding: 10px 5px;
+        padding-bottom: 20px;
+        border-radius: 7px;
+
+    }
+    .rating-wrap {
+        gap: 0px;
+        margin: 30px 0;
+        padding: 0 5px;
+    }
+
+    .rating-wrap .rating {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .container > h3 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    
+    
+    .container>p {
+        font-size: 17px;
+    }
+}
